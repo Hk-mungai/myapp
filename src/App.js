@@ -115,10 +115,11 @@ const App = ({ signOut }) => {
     <Text as="span">{note.description}</Text>
     {note.image && (
       <Image
-        src={note.image}
+        src={"/media/cc0-images/grapefruit-slice-332-332.jpg"}
         alt={`visual aid for ${notes.name}`}
         style={{ width: 400 }}
       />
+
     )}
     <Button variation="link" onClick={() => deleteNote(note)}>
       Delete note

@@ -1,0 +1,14 @@
+{
+  "resourceName": "codex",
+  "policyUUID": "7aebf836",
+  "bucketName": "my-sample-app",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+
 import "@aws-amplify/ui-react/styles.css";
 import { API, Storage } from "aws-amplify";
 import {
@@ -114,11 +115,17 @@ const App = ({ signOut }) => {
     </Text>
     <Text as="span">{note.description}</Text>
     {note.image && (
-      <Image
-        src={"/media/cc0-images/grapefruit-slice-332-332.jpg"}
-        alt={`visual aid for ${notes.name}`}
-        style={{ width: 400 }}
-      />
+     
+     function App() {
+      return (
+        <div style={{ backgroundImage: `url(/https://cdn.pixabay.com/photo/2016/11/18/22/58/stars-1837306_960_720.jpg)` }}>
+          Hello World
+        </div>
+      );
+    }
+
+         
+     
 
     )}
     <Button variation="link" onClick={() => deleteNote(note)}>
